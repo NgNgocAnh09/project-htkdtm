@@ -2,10 +2,10 @@
 
 ## 1. Thông Tin Chung
 
-- **Tên nhóm:** [Điền tên nhóm theo định dạng: tennhom-tenlop, ví dụ: nhom01-dhti15a1hn]
-- **Tên lớp học phần:** [Điền mã hoặc tên lớp học phần]
-- **Tên đề tài:** [Điền tên đề tài đồ án / bài tập lớn]
-- **Giảng viên hướng dẫn:** [Điền tên giảng viên]
+- **Tên nhóm:** nhom09-65httt
+- **Tên lớp học phần:** Hệ thống kinh doanh thông minh
+- **Tên đề tài:** Hệ thống phân tích xu hướng lừa đảo trực tuyến và cảnh báo URL có dấu hiệu Phising
+- **Giảng viên hướng dẫn:** ThS.Đỗ Oanh Cường
 
 ---
 
@@ -13,9 +13,11 @@
 
 | STT | Họ và Tên | Mã Sinh Viên | Lớp Sinh Hoạt | Vai Trò | Nhiệm Vụ Phân Công | Tỷ Lệ Đóng Góp (%) | Email |
 | :-: | :--- | :-: | :-: | :--- | :--- | :-: | :--- |
-| 1 | [Nguyễn Văn A] | [20210001] | [DHTI15A1HN] | Nhóm trưởng | Thiết kế kiến trúc, phát triển Backend API | 100% | a@student.edu.vn |
-| 2 | [Trần Thị B] | [20210002] | [DHTI15A1HN] | Thành viên | Thiết kế giao diện Frontend, tích hợp API | 100% | b@student.edu.vn |
-| 3 | [Lê Văn C] | [20210003] | [DHTI15A1HN] | Thành viên | Thiết kế cơ sở dữ liệu, kiểm thử phần mềm | 100% | c@student.edu.vn |
+| 1 | Nguyễn Thị Ngọc Ánh | 2351160506 | 65HTTT | Nhóm trưởng | Thiết kế kiến trúc, phát triển Backend API | 20% | nguyenngocanh2695@gmail.com |
+| 2 | Đặng Thị Thu Hương | 2351160527 | 65HTTT | Thành viên | Thu thập dữ liệu (Scrapy/Requests), làm sạch và khử trùng lặp bài viết cảnh báo | 20% | b@student.edu.vn |
+| 3 | Lê Duy Khánh | 2351160532 | 65HTTT | Thành viên |  Xây dựng mô hình NLP (PhoBERT) phân loại kịch bản lừa đảo từ bài viết | 20% | c@student.edu.vn |
+| 4 | Nguyễn Minh Phú | 2351160540 | 65HTTT | Thành viên | Trích xuất đặc trưng chuỗi URL và huấn luyện mô hình ML (XGBoost/Random Forest) phát hiện Phishing. | 20% | c@student.edu.vn |
+| 5 | Trần Quang Thịnh | 2351160555 | 65HTTT | Thành viên | Thiết kế Dashboard Power BI và phát triển giao diện Web Demo | 20% | c@student.edu.vn |
 
 ---
 
