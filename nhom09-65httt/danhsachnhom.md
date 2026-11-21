@@ -15,7 +15,7 @@
 | :-: | :--- | :-: | :-: | :--- | :--- | :-: | :--- |
 | 1 | Nguyễn Thị Ngọc Ánh | 2351160506 | 65HTTT | Nhóm trưởng | Thiết kế kiến trúc, phát triển Backend API | 20% | nguyenngocanh2695@gmail.com |
 | 2 | Đặng Thị Thu Hương | 2351160527 | 65HTTT | Thành viên | Thu thập dữ liệu (Scrapy/Requests), làm sạch và khử trùng lặp bài viết cảnh báo | 20% | b@student.edu.vn |
-| 3 | Lê Duy Khánh | 2351160532 | 65HTTT | Thành viên |  Xây dựng mô hình NLP (PhoBERT) phân loại kịch bản lừa đảo từ bài viết | 20% | c@student.edu.vn |
+| 3 | Lê Duy Khánh | 2351160532 | 65HTTT | Thành viên |  Xây dựng mô hình NLP (PhoBERT) phân loại kịch bản lừa đảo từ bài viết | 20% | zerokun121@gmail.com |
 | 4 | Nguyễn Minh Phú | 2351160540 | 65HTTT | Thành viên | Trích xuất đặc trưng chuỗi URL và huấn luyện mô hình ML (XGBoost/Random Forest) phát hiện Phishing. | 20% | c@student.edu.vn |
 | 5 | Trần Quang Thịnh | 2351160555 | 65HTTT | Thành viên | Thiết kế Dashboard Power BI và phát triển giao diện Web Demo | 20% | c@student.edu.vn |
 
