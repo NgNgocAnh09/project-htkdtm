@@ -37,7 +37,7 @@ def generate_benign_urls(count: int = 10000, seed: int = 42) -> list:
         path = random.choice(BENIGN_PATHS)
         scheme = "https://" if random.random() > 0.1 else "http://"
         
-        # Thỉnh thoảng có subdomain lành tính: mail, api, docs, m, news
+        # Thỉnh thoảng có subdomain lành tính như mail, api, docs, m, news
         if random.random() > 0.6:
             sub = random.choice(["www", "api", "docs", "news", "m", "portal"])
             full_host = f"{sub}.{domain}"

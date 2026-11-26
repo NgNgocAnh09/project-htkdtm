@@ -11,7 +11,7 @@ class SimHashDeduplicator:
 
     def _get_features(self, text: str):
         text = text.lower()
-        # Loại bỏ ký tự đặc biệt
+        # Bỏ ký tự đặc biệt
         words = re.findall(r'[\w]+', text, re.UNICODE)
         # Sinh 2-grams để tăng độ phân giải ngữ cảnh
         shingles = []

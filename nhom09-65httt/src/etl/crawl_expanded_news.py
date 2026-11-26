@@ -76,7 +76,7 @@ ORG_RULES = [
 
 def infer_category_and_org(text: str):
     text_lower = text.lower()
-    cat_code = 'SCAM_02' # Mặc định nếu không rõ
+    cat_code = 'SCAM_02' # Mặc định nếu k rõ
     for code, kws in SCAM_MAPPING_RULES:
         if any(kw in text_lower for kw in kws):
             cat_code = code

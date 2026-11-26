@@ -53,7 +53,7 @@ def scrape_phishtank_search_pages(max_pages: int = 5, delay: float = 2.0) -> lis
                 break
                 
             rows = table.find_all('tr')
-            for row in rows[1:]: # bỏ header
+            for row in rows[1:]: # loại bỏ header
                 cols = row.find_all('td')
                 if len(cols) >= 4:
                     phish_id = cols[0].get_text(strip=True)
