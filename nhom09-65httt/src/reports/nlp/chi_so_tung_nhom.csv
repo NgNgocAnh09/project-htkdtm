@@ -1,0 +1,21 @@
+﻿Mô hình,Nhóm,Precision,Recall,F1,Số bài
+TF-IDF + Logistic Regression,A.Giả danh CQ,1.0,0.5,0.667,10
+TF-IDF + Logistic Regression,B.Đầu tư,0.875,0.913,0.894,46
+TF-IDF + Logistic Regression,C.BĐS/nhà ở,0.833,0.833,0.833,18
+TF-IDF + Logistic Regression,D.Vay/NH/hụi,0.632,0.706,0.667,17
+TF-IDF + Logistic Regression,E.Qua MXH,0.667,0.4,0.5,15
+TF-IDF + Logistic Regression,F.Giả bác sĩ,0.857,0.75,0.8,8
+TF-IDF + Logistic Regression,G.Chạy việc/án,0.6,0.429,0.5,7
+TF-IDF + Logistic Regression,H.TK/dữ liệu,0.769,0.769,0.769,13
+TF-IDF + Logistic Regression,K.Lừa đảo khác,0.436,0.5,0.466,34
+TF-IDF + Logistic Regression,I.Không LĐ,0.762,0.81,0.785,79
+PhoBERT fine-tune,A.Giả danh CQ,1.0,0.2,0.333,10
+PhoBERT fine-tune,B.Đầu tư,0.772,0.957,0.854,46
+PhoBERT fine-tune,C.BĐS/nhà ở,0.625,0.833,0.714,18
+PhoBERT fine-tune,D.Vay/NH/hụi,0.464,0.765,0.578,17
+PhoBERT fine-tune,E.Qua MXH,0.364,0.267,0.308,15
+PhoBERT fine-tune,F.Giả bác sĩ,1.0,0.75,0.857,8
+PhoBERT fine-tune,G.Chạy việc/án,0.75,0.429,0.545,7
+PhoBERT fine-tune,H.TK/dữ liệu,0.714,0.769,0.741,13
+PhoBERT fine-tune,K.Lừa đảo khác,0.4,0.118,0.182,34
+PhoBERT fine-tune,I.Không LĐ,0.725,0.835,0.776,79
