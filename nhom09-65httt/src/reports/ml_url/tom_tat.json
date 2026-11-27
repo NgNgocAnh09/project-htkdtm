@@ -1,0 +1,14 @@
+{
+  "best_model": "LightGBM",
+  "xgb_params": {
+    "n_estimators": 400,
+    "max_depth": 5,
+    "learning_rate": 0.08182441148887568,
+    "subsample": 0.6557975442608167,
+    "colsample_bytree": 0.6460723242676091,
+    "min_child_weight": 4
+  },
+  "xgb_cv_pr_auc": 0.9507,
+  "n_samples": 13715,
+  "n_vn_eval": 799
+}
