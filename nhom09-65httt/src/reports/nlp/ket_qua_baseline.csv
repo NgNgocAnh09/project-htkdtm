@@ -1,0 +1,4 @@
+﻿Mô hình,Macro-F1,Macro-F1 TB fold,Độ lệch chuẩn,Weighted-F1,Accuracy
+Từ khóa (rule),0.5303,0.5181,0.0773,0.478,0.4737
+TF-IDF + Logistic Regression,0.6881,0.6658,0.0921,0.7262,0.7287
+TF-IDF + Linear SVM,0.6838,0.6564,0.0966,0.7176,0.7206
