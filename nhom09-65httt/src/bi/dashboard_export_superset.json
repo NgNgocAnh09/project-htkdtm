@@ -1,0 +1,169 @@
+{
+  "version": "1.0.0",
+  "type": "assets_export",
+  "metadata": {
+    "title": "Hệ thống Phân tích Xu hướng Lừa đảo Trực tuyến và Giám sát URL Phishing",
+    "slug": "htkdtm-nhom09-dashboard",
+    "created_by": "Lê Duy Khánh (MSV: 2351160532)",
+    "role": "Thành viên 4: BI & Visualization Developer",
+    "academic_course": "Hệ thống kinh doanh thông minh (HTKDTM)",
+    "institution": "Trường Đại học Thủy Lợi",
+    "date": "2026-11-28"
+  },
+  "dashboards": [
+    {
+      "dashboard_title": "HTKDTM Nhóm 09 - Giám sát Toàn diện Xu hướng Lừa đảo & URL Phishing",
+      "slug": "scam-trend-phishing-overview",
+      "position_json": {
+        "DASHBOARD_VERSION_KEY": "v2",
+        "ROOT_ID": { "type": "ROOT", "id": "ROOT_ID", "children": ["GRID_ID"] },
+        "GRID_ID": { "type": "GRID", "id": "GRID_ID", "children": ["TABS_ID"] },
+        "TABS_ID": {
+          "type": "TABS",
+          "id": "TABS_ID",
+          "children": ["TAB_PAGE_1", "TAB_PAGE_2", "TAB_PAGE_3", "TAB_PAGE_4"]
+        },
+        "TAB_PAGE_1": {
+          "type": "TAB",
+          "id": "TAB_PAGE_1",
+          "meta": { "text": "Trang 1: Tổng quan Xu hướng Cảnh báo" },
+          "children": ["ROW_1_KPIS", "ROW_1_CHARTS"]
+        },
+        "TAB_PAGE_2": {
+          "type": "TAB",
+          "id": "TAB_PAGE_2",
+          "meta": { "text": "Trang 2: Phân tích Chi tiết Thủ đoạn" },
+          "children": ["ROW_2_CHARTS"]
+        },
+        "TAB_PAGE_3": {
+          "type": "TAB",
+          "id": "TAB_PAGE_3",
+          "meta": { "text": "Trang 3: Quản trị Dữ liệu & Chất lượng Mô hình" },
+          "children": ["ROW_3_CHARTS"]
+        },
+        "TAB_PAGE_4": {
+          "type": "TAB",
+          "id": "TAB_PAGE_4",
+          "meta": { "text": "Trang 4: Giám sát Kỹ thuật Đặc trưng URL" },
+          "children": ["ROW_4_CHARTS"]
+        }
+      },
+      "metadata": {
+        "color_scheme": "supersetColors",
+        "timed_refresh_immune_slices": [],
+        "filter_scopes": {
+          "1": { "scope": ["ROOT_ID"], "immune": [] }
+        },
+        "compliance_notice": "Tất cả các tiêu đề và số liệu đều sử dụng đúng nhãn 'Số lượng bài cảnh báo ghi nhận' (alert_articles_recorded). Tuyệt đối không suy diễn thành tổng số vụ án thực tế."
+      }
+    }
+  ],
+  "charts": [
+    {
+      "slice_name": "Xu hướng số lượng bài cảnh báo ghi nhận theo tháng và nguồn tin",
+      "viz_type": "echarts_timeseries_bar",
+      "datasource": "v_bi_monthly_article_trend",
+      "params": {
+        "metrics": ["sum__alert_articles_recorded"],
+        "groupby": ["publisher"],
+        "x_axis": "month_year",
+        "time_grain_sqla": "P1M",
+        "stack": true,
+        "y_axis_title": "Số lượng bài cảnh báo ghi nhận (Bài)"
+      }
+    },
+    {
+      "slice_name": "Cơ cấu nguồn tin cảnh báo thu thập",
+      "viz_type": "pie",
+      "datasource": "news_articles",
+      "params": {
+        "metric": "count",
+        "groupby": ["publisher"],
+        "donut": true,
+        "labels_outside": true
+      }
+    },
+    {
+      "slice_name": "Phân bố số lượng bài cảnh báo theo nhóm thủ đoạn lừa đảo",
+      "viz_type": "echarts_timeseries_bar",
+      "datasource": "v_bi_scam_category_distribution",
+      "params": {
+        "metrics": ["sum__total_alert_articles"],
+        "groupby": ["category_name"],
+        "orientation": "horizontal",
+        "x_axis_title": "Số lượng bài cảnh báo ghi nhận (Bài)"
+      }
+    },
+    {
+      "slice_name": "Top tổ chức bị đối tượng mạo danh nhiều nhất",
+      "viz_type": "table",
+      "datasource": "article_org_mapping",
+      "params": {
+        "metrics": ["count"],
+        "groupby": ["org_name"],
+        "order_desc": true,
+        "page_length": 10
+      }
+    },
+    {
+      "slice_name": "Tỷ lệ khử trùng lặp dữ liệu bài viết (SimHash 64-bit)",
+      "viz_type": "pie",
+      "datasource": "news_articles",
+      "params": {
+        "metric": "count",
+        "groupby": ["is_duplicate"],
+        "color_scheme": "d3Category20"
+      }
+    },
+    {
+      "slice_name": "Phân bố độ tin cậy phân loại của Mô hình NLP PhoBERT",
+      "viz_type": "histogram",
+      "datasource": "nlp_prediction_results",
+      "params": {
+        "all_columns_x": "pred_do_tin_cay",
+        "num_bins": 15,
+        "x_axis_title": "Confidence Score [0.0 - 1.0]"
+      }
+    },
+    {
+      "slice_name": "So sánh đặc trưng chuỗi URL: Phishing vs Benign",
+      "viz_type": "box_plot",
+      "datasource": "v_url_lexical_ml_dataset",
+      "params": {
+        "metrics": ["avg__url_length", "avg__entropy_score", "avg__special_char_ratio"],
+        "groupby": ["ground_truth_label"]
+      }
+    }
+  ],
+  "datasources": [
+    {
+      "table_name": "v_bi_monthly_article_trend",
+      "sql": "SELECT TO_CHAR(publish_date_ict, 'YYYY-MM') AS month_year, publisher, COUNT(article_id) AS alert_articles_recorded FROM news_articles WHERE is_duplicate = FALSE GROUP BY TO_CHAR(publish_date_ict, 'YYYY-MM'), publisher",
+      "columns": [
+        {"column_name": "month_year", "type": "VARCHAR"},
+        {"column_name": "publisher", "type": "VARCHAR"},
+        {"column_name": "alert_articles_recorded", "type": "BIGINT", "is_dttm": false}
+      ]
+    },
+    {
+      "table_name": "v_bi_scam_category_distribution",
+      "sql": "SELECT sc.category_code, sc.category_name, COUNT(DISTINCT na.article_id) AS total_alert_articles, COUNT(DISTINCT aom.org_id) AS distinct_impersonated_orgs FROM scam_categories sc JOIN article_scam_mapping asm ON sc.category_id = asm.category_id JOIN news_articles na ON asm.article_id = na.article_id LEFT JOIN article_org_mapping aom ON na.article_id = aom.article_id WHERE na.is_duplicate = FALSE GROUP BY sc.category_code, sc.category_name",
+      "columns": [
+        {"column_name": "category_code", "type": "VARCHAR"},
+        {"column_name": "category_name", "type": "VARCHAR"},
+        {"column_name": "total_alert_articles", "type": "BIGINT"},
+        {"column_name": "distinct_impersonated_orgs", "type": "BIGINT"}
+      ]
+    },
+    {
+      "table_name": "v_url_lexical_ml_dataset",
+      "sql": "SELECT u.url_id, u.domain, u.ground_truth_label, lf.url_length, lf.domain_length, lf.subdomain_count, lf.special_char_ratio, lf.entropy_score, lf.has_ip_address, lf.is_shortened FROM url_dataset u JOIN lexical_features lf ON u.url_id = lf.url_id",
+      "columns": [
+        {"column_name": "ground_truth_label", "type": "INTEGER"},
+        {"column_name": "url_length", "type": "DOUBLE PRECISION"},
+        {"column_name": "entropy_score", "type": "DOUBLE PRECISION"},
+        {"column_name": "special_char_ratio", "type": "DOUBLE PRECISION"}
+      ]
+    }
+  ]
+}

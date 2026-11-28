@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-11-28T22:45:00",
+  "developer": "Lê Duy Khánh (2351160532) - Thành viên 4: BI & Visualization Developer",
+  "project": "Hệ thống phân tích xu hướng lừa đảo trực tuyến và cảnh báo URL có dấu hiệu phishing",
+  "metrics_reconciliation": {
+    "total_articles_ingested": 250,
+    "unique_articles_for_dashboard": 247,
+    "duplicate_articles_flagged": 3,
+    "duplication_rate_percent": 1.2,
+    "articles_by_publisher": {
+      "VietnamNet": 200,
+      "Báo Dân Trí": 29,
+      "VnExpress": 18
+    },
+    "articles_by_month": {
+      "2026-11": 147,
+      "2026-10": 66,
+      "2026-09": 34
+    },
+    "top_scam_categories": {
+      "KHONG_PHAI_LUA_DAO": 79,
+      "DAU_TU_HUY_DONG_VON": 46,
+      "LUA_DAO_KHAC": 34,
+      "BAT_DONG_SAN_NHA_O": 18,
+      "VAY_TIEN_NGAN_HANG_HUI": 17,
+      "LUA_DAO_QUA_MANG_XA_HOI": 15,
+      "TAI_KHOAN_DU_LIEU_MA_DOC": 13,
+      "GIA_DANH_CO_QUAN": 10,
+      "GIA_BAC_SI_Y_TE": 8,
+      "NHAN_CHAY_VIEC_CHAY_AN": 7
+    },
+    "total_urls_evaluated": 13715,
+    "phishing_urls_count": 6000,
+    "benign_urls_count": 7715,
+    "avg_phishing_url_length": 53.21,
+    "avg_benign_url_length": 41.23,
+    "avg_phishing_entropy_host": 3.65,
+    "avg_benign_entropy_host": 3.33
+  },
+  "compliance_statement": "100% các tiêu đề biểu đồ và trường hiển thị tuân thủ quy chuẩn: 'Số lượng bài cảnh báo ghi nhận', loại trừ hoàn toàn các từ ngữ gây hiểu lầm như 'tổng số vụ án/nạn nhân'."
+}

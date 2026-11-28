@@ -13,11 +13,11 @@
 
 | STT | Họ và Tên           | Mã Sinh Viên | Lớp Sinh Hoạt | Vai Trò     | Nhiệm Vụ Phân Công                                                                                  | Tỷ Lệ Đóng Góp (%) | Email                       |
 | :-: | :------------------ | :----------: | :-----------: | :---------- | :-------------------------------------------------------------------------------------------------- | :----------------: | :-------------------------- |
-|  1  | Nguyễn Thị Ngọc Ánh |  2351160506  |    65HTTT     | Nhóm trưởng | Thiết kế kiến trúc, phát triển Backend API                                                          |        20%         | nguyenngocanh2695@gmail.com |
-|  2  | Đặng Thị Thu Hương  |  2351160527  |    65HTTT     | Thành viên  | Thu thập dữ liệu (Scrapy/Requests), làm sạch và khử trùng lặp bài viết cảnh báo                     |        20%         | b@student.edu.vn            |
-|  3  | Lê Duy Khánh        |  2351160532  |    65HTTT     | Thành viên  | Xây dựng mô hình NLP (PhoBERT) phân loại kịch bản lừa đảo từ bài viết                               |        20%         | zerokun121@gmail.com        |
-|  4  | Nguyễn Minh Phú     |  2351160540  |    65HTTT     | Thành viên  | Trích xuất đặc trưng chuỗi URL và huấn luyện mô hình ML (XGBoost/Random Forest) phát hiện Phishing. |        20%         | minhphu025405@gmail.com     |
-|  5  | Trần Quang Thịnh    |  2351160555  |    65HTTT     | Thành viên  | Thiết kế Dashboard Power BI và phát triển giao diện Web Demo                                        |        20%         | c@student.edu.vn            |
+|  1  | Nguyễn Thị Ngọc Ánh |  2351160506  |    65HTTT     | Nhóm trưởng | Data Engineer & ETL Leader: Thiết kế kiến trúc dữ liệu, pipeline ETL và CSDL PostgreSQL              |        20%         | nguyenngocanh2695@gmail.com |
+|  2  | Nguyễn Minh Phú     |  2351160540  |    65HTTT     | Thành viên  | AI / NLP Specialist: Xây dựng mô hình NLP (PhoBERT) phân loại kịch bản lừa đảo từ bài viết           |        20%         | minhphu025405@gmail.com     |
+|  3  | Trần Quang Thịnh    |  2351160555  |    65HTTT     | Thành viên  | Machine Learning Engineer: Trích xuất đặc trưng và huấn luyện mô hình phát hiện URL Phishing         |        20%         | c@student.edu.vn            |
+|  4  | Lê Duy Khánh        |  2351160532  |    65HTTT     | Thành viên  | BI & Visualization Developer: Thiết kế, xây dựng hệ thống Dashboard Apache Superset & đối soát số liệu |        20%         | zerokun121@gmail.com        |
+|  5  | Đặng Thị Thu Hương  |  2351160527  |    65HTTT     | Thành viên  | Web App Developer & Integrator: Phát triển Web Application tra cứu URL an toàn & tích hợp hệ thống   |        20%         | b@student.edu.vn            |
 
 ---
 
